@@ -1,8 +1,16 @@
 ---
 layout: page
-title: "About"
+title: "Eotect Notes These"
 permalink: /
 ---
 
-Hello, World
-============
+# Eotect Notes These
+
+- [[dos]]
+
+- [[programming]]
+
+- [[os]]
+
+- [[virtualization]]
+

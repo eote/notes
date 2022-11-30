@@ -15,22 +15,22 @@
 > # Add a raw disk to a virtualbox virtual machine
 > 
 > This is strange there is no way to add a physical disk to your virtual machine under virtualbox! Still it is possible and it is simple, but you need to execute few commands under console so you need to open a terminal and to have a root privileges!  
-> **To use a raw disk in our virtual machine we must create a special VMDK file and then to use it when adding a hard drive to our virtualbox virtual machine with ¡°Use an existing virtual hard disk dile¡±.**
+> **To use a raw disk in our virtual machine we must create a special VMDK file and then to use it when adding a hard drive to our virtualbox virtual machine with â€»Use an existing virtual hard disk dileÂ§.**
 > 
 > Here are the right steps to add a raw disk:
 > 
-> ### STEP 1) Permissions ¨C your user must have (write) permissions to access raw disks
+> ### STEP 1) Permissions your user must have (write) permissions to access raw disks
 > 
-> In most cases your user do not have write permission to the disk ¨C it is the same under MS Windows and any Linux distribution (and probably MAC)! So here is the right way how to give permissions under Linux and Windows:
+> In most cases your user do not have write permission to the disk æ¯ it is the same under MS Windows and any Linux distribution (and probably MAC)! So here is the right way how to give permissions under Linux and Windows:
 > 
-> -   **Under Linux** (Ubuntu, Centos, Fedora, Gentoo and probably all other). There are at least two ways to give WRITE permission to the raw disk (use one of them, the first one is preferred). We want to add our third disk the ¡°/dev/sdc¡± so the examples are with this device:
->     1.  add your user to ¡°disk¡± group and log out. After you log in you¡¯ll have WRITE permissions to the disks. Probably you must log off your GUI (Gnome, KDE and so on), too!
+> -   **Under Linux** (Ubuntu, Centos, Fedora, Gentoo and probably all other). There are at least two ways to give WRITE permission to the raw disk (use one of them, the first one is preferred). We want to add our third disk the â€»/dev/sdcÂ§ so the examples are with this device:
+>     1.  add your user to â€»diskÂ§ group and log out. After you log in youï¼Šll have WRITE permissions to the disks. Probably you must log off your GUI (Gnome, KDE and so on), too!
 >         
 >         1
 >         
 >         `srv@``local` `~ $` `sudo` `sudo` `usermod` `-a -G disk myuser`
 >         
->         ¡°myuser¡± is the username of the user I am logged in. The log out and log in (if you are using a GUI ¨C gnome, kde or something else, you must log out from the GUI, too and then log in again).
+>         â€»myuserÂ§ is the username of the user I am logged in. The log out and log in (if you are using a GUI æ¯ gnome, kde or something else, you must log out from the GUI, too and then log in again).
 >         
 >     2.  execute virtualbox with root user
 >     3.  change the permission of the physical device you want to use (this is temporary, because next time you reboot you must change it again)
@@ -39,7 +39,7 @@
 >         
 >         `srv@``local` `~ $` `sudo` `chmod` `o+rw` `/dev/sdc`
 >         
-> -   **Under Windows 10** (or 7) ¨C you must start the command prompt and Virtualbox with ¡°run as Administrator¡± ¨C look at the next step (STEP 2).
+> -   **Under Windows 10** (or 7) æ¯ you must start the command prompt and Virtualbox with â€»run as AdministratorÂ§ æ¯ look at the next step (STEP 2).
 > 
 > ### STEP 2) Add the raw disk
 > 
@@ -71,15 +71,15 @@
 >         
 >         `srv@``local` `~ $` `sudo` `VirtualBox`
 >         
->         ¡°/home/myuser¡± is my home user directory. Yours could be with different name so change the name accordingly.
+>         â€»/home/myuserÂ§ is my home user directory. Yours could be with different name so change the name accordingly.
 >         
 >     -   Under Windows (7 and 10)
 >         1.  **First** you must start the command line tool under linux also with **administrative privileges**!  
->             Search for command prompt and with right click you hit ¡°Run as administrator¡±. Change the directory to the VirtualBox executables and then execute the command. Use your path for ¡°filename¡± (c:\\Users\\homer\\.VirtualBox\\physical-sdc.vmdk ¨C change to your path), your home user directory or nay other directory you use for storing the VirtualBox files.  
+>             Search for command prompt and with right click you hit â€»Run as administratorÂ§. Change the directory to the VirtualBox executables and then execute the command. Use your path for â€»filenameÂ§ (c:\\Users\\homer\\.VirtualBox\\physical-sdc.vmdk æ¯ change to your path), your home user directory or nay other directory you use for storing the VirtualBox files.  
 >             
 >             [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-1--3360252c99.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-1--3360252c99.png)
 >             
->             Command Prompt ¨C Run as Administrator
+>             Command Prompt æ¯ Run as Administrator
 >             
 >         2.  Accept the privileges escalation:  
 >             
@@ -132,7 +132,7 @@
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-7--0f33d3ba03.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-7--0f33d3ba03.png)
 >         
->         Windows ¨C Run as administrator
+>         Windows æ¯ Run as administrator
 >         
 >     2.  Confirm administrator privileges escalation under Windows 10 (and 7). Skip this if you are using linux.  
 >         
@@ -140,19 +140,19 @@
 >         
 >         Windows 10 administrator confirmation
 >         
->     3.  Create Virtual Machine with name ¡°test¡±  
+>     3.  Create Virtual Machine with name â€»testÂ§  
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-9--1e5f01cd86.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-9--1e5f01cd86.png)
 >         
 >         Create Virtual Machine
 >         
->     4.  Set the memory to the virtual machine ¨C for example 1024Mbytes.  
+>     4.  Set the memory to the virtual machine æ¯ for example 1024Mbytes.  
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-10--6e1deada12.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-10--6e1deada12.png)
 >         
 >         Memory size
 >         
->     5.  Set the hard disk ¨C our VMDK file to use our raw disk. Check ¡°Use an existing virtual hard disk file¡± and click on ¡°Choose a virtual hard disk file¡­¡± ¨C a dialog will open.  
+>     5.  Set the hard disk æ¯ our VMDK file to use our raw disk. Check â€»Use an existing virtual hard disk fileÂ§ and click on â€»Choose a virtual hard disk fileï¼ƒÂ§ æ¯ a dialog will open.  
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-11--9ed622fc03.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-11--9ed622fc03.png)
 >         
@@ -160,14 +160,14 @@
 >         
 >     6.  Navigate to where is your freshly created VMDK file from the STEP 2) and select it to open.  
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-12--70287f948f.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-12--70287f948f.png)
->     7.  Click ¡°Create¡± to create the virtual machine.  
+>     7.  Click â€»CreateÂ§ to create the virtual machine.  
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-13--35d2725375.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-13--35d2725375.png)
 >         
 >         Create
 >         
 >     
->     ### \* Here is how it looks like our VMDK file in VirtualBox ¡°Virtual Media Manager¡±
+>     ### \* Here is how it looks like our VMDK file in VirtualBox â€»Virtual Media ManagerÂ§
 >     
 >     -   Under Windows 10  
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-14--ea80b83c6c.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-14--ea80b83c6c.png)
@@ -176,7 +176,7 @@
 >     
 >     ### \* Troubleshooting under Linux
 >     
->     The permission problem accessing the disk under linux ¨C NO WRITE permissions here:
+>     The permission problem accessing the disk under linux æ¯ NO WRITE permissions here:
 >     
 >     1
 >     
@@ -192,7 +192,7 @@
 >     
 >     ### \* Troubleshooting under Windows (10)
 >     
->     The permission problem accessing the disk under linux ¨C NO WRITE permissions here:
+>     The permission problem accessing the disk under linux æ¯ NO WRITE permissions here:
 >     
 >     1
 >     
@@ -228,7 +228,7 @@
 >     
 >     `C:\Program Files\Oracle\VirtualBox>`
 >     
->     You did not execute Command Prompt ¡°**Run as administrator**¡±
+>     You did not execute Command Prompt â€»**Run as administrator**Â§
 >     
 >     And if you get the following error:
 >     
@@ -270,7 +270,7 @@
 >         
 >         Use an existing virtual hard disk file
 >         
->     3.  VirtualBox ¨C Error  
+>     3.  VirtualBox æ¯ Error  
 >         
 >         [![main menu](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-6--393e6dca7f.png)](https://ahelpme.com/public/media/tutorials/add-rawdisk-to-virtualbox-step-6--393e6dca7f.png)
 >         

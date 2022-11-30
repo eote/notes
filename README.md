@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Eotect Notes These"
 permalink: /
 ---

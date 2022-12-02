@@ -28,7 +28,7 @@ sub print_dir {
 	my $dir = shift;
 	my $lvl = shift;
 	$lvl = 0 unless($lvl);
-	print "#"x(3+$lvl) . " $dir\n";
+	print "\n" . "#"x(3+$lvl) . " $dir\n";
 	my @subdir;
 	foreach(bsd_glob("$dir/*")) {
 		next if(m/^\./);
@@ -54,8 +54,17 @@ sub print_dir {
 	foreach(@subdir) {
 		print_dir($_,$lvl);
 	}
-	print "\n";
 }
+
+print <<'HEAD';
+---
+layout: home
+permalink: /
+---
+
+## NOTES
+
+HEAD
 
 foreach my $t(qw/dos programming virtualization/) {
 	print_dir($t,0);

@@ -1,7 +1,144 @@
 title: Eotect Notes These
-#remote_theme: pages-themes/architect
-#remote_theme: just-the-docs/just-the-docs
-theme: minima
+email:
+description: >- # this means to ignore newlines until "url:"
+  Write Notes, Share Notes, Collect Notes
+baseurl: "/notes"
+search: true
+#remote_theme: benbalter/retlab
+#remote_theme: huangyz0918/moving
+
+# Build settings
+markdown: kramdown
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+timezone: "China/BeiJing" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Comments
+#repository  : jvenom/venomous-software
+#comments:
+#  provider  : "staticman_v2"
+#  staticman:
+#    branch    : "master"
+#    endpoint  : https://jvenom-staticman.herokuapp.com/v3/entry/gitlab/
+#reCaptcha:
+#  siteKey: 6LfnKAAaAAAAAOqp6Dkzk8uMwwn74VhM8BFNMc6o
+#  secret: oPqvfMr+iSWu3N3msWTGJw2WkILrUBY9HOBmbxAu1eEFlB3hNM8n4HGiC3+RE/9JwLCX0YamKX9BL//Oq7vVMdMkFsNYuYn89tP/dnpX3wrXuTso6w7uj1YMnflmh0mglQry+R0XazYIVKPN6WhyNIdfeOmKrgb1ugkaKO1SaEqB+9P5EB9MYnXY2G7c3JhwBloeNkOsXj9LHGJ4IALvUEyf9Syi6KsH0y5Rol3eWWwiKPvHh0n8qg1q6bM1n5WB6F05taLaZxC7SFUJdoP0rdsXbcMKqVw+YvgdZ8QrhiJoiHfzNpOgDlS/y/qYy18I7Jx3EDJv25rVbS+69TP/gDNBwM7Vds4UXmmY9nS+lM9s9rpIPrKY7c+ZRAjaCtJoCakLZP7bizRuvyZe4eQph4oHFYRUheSS5LqgAJg8LJx7PKEKtcOTZ2UhRtIF38+9Q9829PS3hnOoEgwtwErC/5Emv+Di05DG2tpCIns4z8Z9Qx8Tw5cM29pGG1iwRxjpD45kHJtdTI3JMoPlpIcryk9uWr6liD1xDGO/oZApnOVHjD6kUlfRy/00m95OLs0M8LEeTvkYQDpdIDYsa6gd5anIS9e7mn8FL/XLonsP9Kg+Y951mb6YVrj6rFqOSrS8YMZhv0MuuhcJxQ/iRqJ5HKuG68jFdV6iantnV7JlCms=
+
+# Exclude from processing.
+exclude:
+  # Defaults
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/
+ # Project-specific excludes
+ - LICENSE.md
+ - workspace.code-workspace
+ - Rakefile
+ - build_site_and_check_links.sh
+ - staticman.yml
+
+# Plugins (previously gems:)
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+ - jekyll-avatar
+ - jekyll-paginate
+ - jekyll-sitemap
+ - jekyll-gist
+ - jekyll-feed
+ - jemoji
+ - jekyll-include-cache
+ - jekyll-coffeescript
+ - jekyll-seo-tag
+ - jekyll-default-layout
+ - jekyll-optional-front-matter
+ - jekyll-readme-index
+ - jekyll-titles-from-headings
+ - jekyll-relative-links
+  
+author:
+  name   : "Eotect Nahn"
+  #avatar : "/assets/images/portrait_small.jpg"
+  bio    : "Endless of Tech, Not a human name, MyPlace. HEL."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/eote"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/eote"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/eote"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/eote"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      category: Blog
+  # _posts
+  - scope:
+      path: "os"
+      type: posts
+    values:
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      category: Blog
+  # _posts
+  - scope:
+      path: "programming"
+      type: posts
+    values:
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      category: Blog	  
+  # _posts
+  - scope:
+      path: "virtualization"
+      type: posts
+    values:
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      category: Blog	  	  
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+#      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 

@@ -1,0 +1,40 @@
+# Adapted from here:
+# https://gitlab.com/jvenom/venomous-software/-/raw/master/.gitlab-ci.yml
+
+default:
+  image: ruby:3
+  cache:
+    paths:
+      - vendor/ruby
+  before_script:
+    - bundle config set path 'vendor/ruby'
+    - bundle exec ruby -v
+    - bundle install -j $(nproc)
+
+stages:
+  - deploy
+
+#test-pages-build:
+#  stage: test
+#  script:
+#    - bundle exec rake test[test_site]
+#  artifacts:
+#    paths:
+#      - test_site
+#    expire_in: 4 hrs
+#  rules:
+#    - if: '$CI_COMMIT_BRANCH != "master"'
+#      allow_failure: true
+
+pages:
+  stage: deploy
+  variables:
+    JEKYLL_ENV: production
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+

@@ -58,7 +58,6 @@ sub print_dir {
 
 print <<'HEAD';
 ---
-layout: home
 permalink: /
 ---
 
@@ -66,6 +65,6 @@ permalink: /
 
 HEAD
 
-foreach my $t(qw/dos programming virtualization/) {
+foreach my $t(qw/os programming virtualization/) {
 	print_dir($t,0);
 }

@@ -1,14 +1,15 @@
 ---
-layout: home
 permalink: /
 ---
 
 ## NOTES
 
 
-### dos
- - [dos/20221130 github repo chinese dos games](dos/20221130_github_repo_chinese_dos_games.md)
- - [dos/dos compatible and clones](dos/dos-compatible-and-clones.md)
+### os
+
+#### os/dos
+  - [os/dos/20221130 github repo chinese dos games](os/dos/20221130_github_repo_chinese_dos_games.md)
+  - [os/dos/dos compatible and clones](os/dos/dos-compatible-and-clones.md)
 
 ### programming
 

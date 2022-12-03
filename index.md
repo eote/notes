@@ -23,6 +23,9 @@ permalink: /
 #### programming/c-c++
   - [programming/c-c++/Free C C++ Compilers and Interpreters](programming/c-c++/Free-C-C++-Compilers-and-Interpreters.md)
 
+#### programming/perl
+  - [programming/perl/20221203 perl here document](programming/perl/20221203_perl_here_document.md)
+
 ### virtualization
  - [virtualization/Free PC Intel x86 Emulators and Virtual Machines](virtualization/Free-PC-Intel-x86-Emulators-and-Virtual-Machines.md)
 

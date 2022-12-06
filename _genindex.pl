@@ -80,6 +80,6 @@ permalink: /
 
 HEAD
 
-foreach my $t(qw/os programming virtualization/) {
+foreach my $t(qw/daily programming os virtualization/) {
 	print_dir($t,0);
 }

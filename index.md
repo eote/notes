@@ -5,21 +5,11 @@ permalink: /
 ## NOTES
 
 
-### os
+### daily
+ - [daily/20221205](daily/20221205.md)
+ - [daily/20221205](daily/20221205.html)
 
-#### os/cygwin
-  - [os/cygwin/[20221206]Cygwin Mirror Sites](os/cygwin/20221206_Cygwin%20Mirror%20Sites.md)
-
-#### os/dos
-  - [os/dos/dos compatible and clones](os/dos/dos-compatible-and-clones.md)
-  - [os/dos/[20221130]github: repo chinese dos games](os/dos/20221130_github_repo_chinese_dos_games.md)
-
-#### os/windows
-  - [os/windows/Microsoft: Activation Scripts](os/windows/Microsoft_Activation_Scripts.md)
-  - [os/windows/[20221206]Add or Remove Duplicate Drives in Navigation Pane in Windows 10 Tutorials](os/windows/20221206_Add%20or%20Remove%20Duplicate%20Drives%20in%20Navigation%20Pane%20in%20Windows%2010%20Tutorials.md)
-  - [os/windows/[20221205]Register: any portable app as a default program in Windows](os/windows/20221205_Register_any_portable_app_as_a_default_program_in_Windows.md)
-
-##### os/windows/20221206_Add or Remove Duplicate Drives in Navigation Pane in Windows 10
+#### daily/20221205
 
 ### programming
 
@@ -42,6 +32,22 @@ permalink: /
 
 #### programming/perl
   - [programming/perl/[20221203]perl: here document](programming/perl/20221203_perl_here_document.md)
+
+### os
+
+#### os/cygwin
+  - [os/cygwin/[20221206]Cygwin Mirror Sites](os/cygwin/20221206_Cygwin%20Mirror%20Sites.md)
+
+#### os/dos
+  - [os/dos/dos compatible and clones](os/dos/dos-compatible-and-clones.md)
+  - [os/dos/[20221130]github: repo chinese dos games](os/dos/20221130_github_repo_chinese_dos_games.md)
+
+#### os/windows
+  - [os/windows/Microsoft: Activation Scripts](os/windows/Microsoft_Activation_Scripts.md)
+  - [os/windows/[20221206]Add or Remove Duplicate Drives in Navigation Pane in Windows 10 Tutorials](os/windows/20221206_Add%20or%20Remove%20Duplicate%20Drives%20in%20Navigation%20Pane%20in%20Windows%2010%20Tutorials.md)
+  - [os/windows/[20221205]Register: any portable app as a default program in Windows](os/windows/20221205_Register_any_portable_app_as_a_default_program_in_Windows.md)
+
+##### os/windows/20221206_Add or Remove Duplicate Drives in Navigation Pane in Windows 10
 
 ### virtualization
  - [virtualization/Free PC Intel x86 Emulators and Virtual Machines](virtualization/Free-PC-Intel-x86-Emulators-and-Virtual-Machines.md)

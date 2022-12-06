@@ -30,25 +30,40 @@ sub print_dir {
 	$lvl = 0 unless($lvl);
 	print "\n" . "#"x(3+$lvl) . " $dir\n";
 	my @subdir;
+	my @files;
 	foreach(bsd_glob("$dir/*")) {
 		next if(m/^\./);
 		if(-d $_) {
 			push @subdir,$_;
 		}
-		else {
-			my $fn = $_;
-			my $prefix = "";
-			my $name = $fn;
-			if($fn =~ m/^(.+)\/([^\/]+)$/) {
-				$prefix = "$1/";
-				$name = $2;
-			}
-			$name =~ s/\.[^\.]+$//;
-			$name =~ s/[-_]/ /g;
-			$name = $prefix . $name;
-			$fn =~ s/ /%20/g;
-			print " "x(1+$lvl) . "- " . "[$name]($fn)\n";
+		elsif(m/\.(?:md|html|txt)$/){
+			push @files,$_;
 		}
+	}
+	foreach my $fn(reverse sort @files) {
+		my $prefix = "";
+		my $name = $fn;
+		my $date;
+		my $head;
+		if($fn =~ m/^(.+)\/([^\/]+)$/) {
+			$prefix = "$1/";
+			$name = $2;
+		}
+		$name =~ s/\.[^\.]+$//;
+		if($name =~ m/^([\d-]{8,})_(.+)$/) {
+			$date = $1;
+			$name = $2;
+		}
+		if($name =~ m/^([^_]+)_(.+)$/) {
+			$head = $1;
+			$name = $2;
+		}
+		$name =~ s/[-_]/ /g;
+		$prefix = $prefix . "[${date}]" if($date);
+		$prefix = $prefix . "${head}: " if($head); 
+		$name = $prefix . $name;
+		$fn =~ s/ /%20/g;
+		print " "x(1+$lvl) . "- " . "[$name]($fn)\n";
 	}
 	$lvl += 1;
 	foreach(@subdir) {

@@ -4,7 +4,7 @@
 
 screenshot:
 
-![sc1](20221205/20221205_screenshot_01.png "Screenshot 1")
+![sc1](20221205_screenshot_01.png "Screenshot 1")
 
 ### 安装出现的问题
 

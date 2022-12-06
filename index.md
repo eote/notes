@@ -6,9 +6,9 @@ permalink: /
 
 
 ### daily
- - [daily/[20221205]Updated-OS: From Windows 7 to Windows 10](daily/20221205_Updated-OS_From%20Windows%207%20to%20Windows%2010.md)
+ - [daily/[20221205]Updated-OS: From Windows 7 to Windows 10](daily/20221205_Updated-OS_From-Windows-7-to-Windows-10.md)
 
-#### daily/20221205
+#### daily/20221205_Updated-OS_From-Windows-7-to-Windows-10
 
 ### programming
 

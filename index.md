@@ -8,14 +8,8 @@ permalink: /
 ### daily
  - [daily/[20221205]Updated-OS: From Windows 7 to Windows 10](daily/20221205_Updated-OS_From-Windows-7-to-Windows-10.md)
 
-#### daily/20221205_Updated-OS_From-Windows-7-to-Windows-10
-
-### programming
-
 #### programming/basic
   - [programming/basic/Free BASIC Compilers and Interpreters](programming/basic/Free-BASIC-Compilers-and-Interpreters.md)
-
-#### programming/batch
 
 ##### programming/batch/references
    - [programming/batch/references/Batch files   Escape Characters](programming/batch/references/Batch-files---Escape-Characters.md)
@@ -32,8 +26,6 @@ permalink: /
 #### programming/perl
   - [programming/perl/[20221203]perl: here document](programming/perl/20221203_perl_here_document.md)
 
-### os
-
 #### os/cygwin
   - [os/cygwin/[20221206]Cygwin Mirror Sites](os/cygwin/20221206_Cygwin%20Mirror%20Sites.md)
 
@@ -45,8 +37,6 @@ permalink: /
   - [os/windows/Microsoft: Activation Scripts](os/windows/Microsoft_Activation_Scripts.md)
   - [os/windows/[20221206]Add or Remove Duplicate Drives in Navigation Pane in Windows 10 Tutorials](os/windows/20221206_Add%20or%20Remove%20Duplicate%20Drives%20in%20Navigation%20Pane%20in%20Windows%2010%20Tutorials.md)
   - [os/windows/[20221205]Register: any portable app as a default program in Windows](os/windows/20221205_Register_any_portable_app_as_a_default_program_in_Windows.md)
-
-##### os/windows/20221206_Add or Remove Duplicate Drives in Navigation Pane in Windows 10
 
 ### virtualization
  - [virtualization/Free PC Intel x86 Emulators and Virtual Machines](virtualization/Free-PC-Intel-x86-Emulators-and-Virtual-Machines.md)

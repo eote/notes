@@ -27,8 +27,6 @@ use File::Glob qw/bsd_glob/;
 sub print_dir {
 	my $dir = shift;
 	my $lvl = shift;
-	$lvl = 0 unless($lvl);
-	print "\n" . "#"x(3+$lvl) . " $dir\n";
 	my @subdir;
 	my @files;
 	foreach(bsd_glob("$dir/*")) {
@@ -39,6 +37,10 @@ sub print_dir {
 		elsif(m/\.(?:md|html|txt)$/){
 			push @files,$_;
 		}
+	}
+	if(@files) {
+		$lvl = 0 unless($lvl);
+		print "\n" . "#"x(3+$lvl) . " $dir\n";
 	}
 	foreach my $fn(reverse sort @files) {
 		my $prefix = "";

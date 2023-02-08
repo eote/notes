@@ -19,7 +19,7 @@
 			 l
 			  d
 			   !
-	<<SOME_TEXT
+SOME_TEXT
 ```
 
 或者
@@ -38,5 +38,5 @@
 			 l
 			  d
 			   !
-	<<SOME_TEXT
+SOME_TEXT
 ```

@@ -82,6 +82,6 @@ permalink: /
 
 HEAD
 
-foreach my $t(qw/daily programming os virtualization/) {
+foreach my $t(qw/daily programming os virtualization software game link/) {
 	print_dir($t,0);
 }

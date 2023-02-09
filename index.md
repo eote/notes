@@ -18,7 +18,7 @@ permalink: /
   - [programming/c-c++/Free C C++ Compilers and Interpreters](programming/c-c++/Free-C-C++-Compilers-and-Interpreters.md)
 
 #### programming/github
-  - [programming/github/[20230209]github: awesomeness](programming/github/20230209_github_awesomeness.md)
+  - [programming/github/[20230209]Github: Awesome](programming/github/20230209_Github_Awesome.md)
 
 #### programming/markdown
   - [programming/markdown/[20221206]Markdown-Guide-03: Extended Syntax Markdown Guide](programming/markdown/20221206_Markdown-Guide-03_Extended%20Syntax%20Markdown%20Guide.md)
@@ -52,8 +52,7 @@ permalink: /
 #### virtualization/virtualbox
   - [virtualization/virtualbox/[20221222]virtualbox.org • View topic   Windows 98SE step by step](virtualization/virtualbox/20221222_virtualbox.org%20•%20View%20topic%20-%20Windows%2098SE%20step%20by%20step.md)
   - [virtualization/virtualbox/[20221221]virtualbox.org • View topic   Tutorial Windows 9598 guest OSes](virtualization/virtualbox/20221221_virtualbox.org%20•%20View%20topic%20-%20Tutorial%20Windows%209598%20guest%20OSes.md)
-  - [virtualization/virtualbox/[20221221]VirtualBox安装Windows 98步骤: whziwen的博客 CSDN博客 虚拟机安装win98](virtualization/virtualbox/20221221_VirtualBox安装Windows%2098步骤_whziwen的博客-CSDN博客_虚拟机安装win98.md)
-  - [virtualization/virtualbox/[20221221]VirtualBox安装Windows 98步骤: whziwen的博客 CSDN博客 虚拟机安装win98(1)](virtualization/virtualbox/20221221_VirtualBox安装Windows%2098步骤_whziwen的博客-CSDN博客_虚拟机安装win98(1).md)
+  - [virtualization/virtualbox/[20221221]VirtualBox安装Windows 98步骤: whziwen的博客](virtualization/virtualbox/20221221_VirtualBox安装Windows%2098步骤_whziwen的博客.md)
 
 ### software
  - [software/[20221211]Adblock Plus: How to write filters](software/20221211_Adblock%20Plus_How%20to%20write%20filters.md)
@@ -62,4 +61,4 @@ permalink: /
  - [game/[20230125]King of Avalon   Best Troop Composition for Attacking Players (PVP)](game/20230125_King%20of%20Avalon%20-%20Best%20Troop%20Composition%20for%20Attacking%20Players%20(PVP).md)
 
 ### link
- - [link/[20230209]这130个网站比涨工资都重要学习、书籍、冷知识、黑科技、代码、资源...   资源否](link/20230209_这130个网站比涨工资都重要学习、书籍、冷知识、黑科技、代码、资源...%20-%20资源否.md)
+ - [link/[20230209]这130个网站比涨工资都重要:  资源否](link/20230209_这130个网站比涨工资都重要__资源否.md)
